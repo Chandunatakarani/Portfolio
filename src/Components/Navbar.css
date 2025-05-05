@@ -1,25 +1,29 @@
+/* Core navbar styling */
 .navbar {
   background-color: #0a192f !important;
   z-index: 999;
   position: relative;
 }
 
+/* Brand */
 .navbar-brand {
   font-size: 1.5rem;
   letter-spacing: 1px;
+  color: white !important;
 }
 
+/* Links */
 .nav-link {
   font-weight: 500;
+  color: #ffffff !important;
   transition: color 0.3s ease;
-  color: #ffffff !important; /* White by default */
-  text-align: right;
 }
 
 .nav-link:hover {
   color: orange !important;
 }
 
+/* Background image */
 .bgimage {
   background-image: url('../bgimage/myportfolio.jpg');
   background-size: cover;
@@ -29,6 +33,7 @@
   z-index: 1;
 }
 
+/* Center content */
 .typewriter {
   position: absolute;
   top: 50%;
@@ -39,44 +44,69 @@
   text-align: center;
 }
 
-.footer-link {
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: orange;
-}
-
-/* Override the Bootstrap navbar toggler icon */
+/* Hamburger icon (white) */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
+/* Toggler button style */
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  z-index: 1000;
+}
+
+/* MOBILE MENU STYLING */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: transparent !important;
+    right: 0;
+    width: auto;
+    background: transparent !important;
     z-index: 998;
-    padding: 0.5rem 1rem;
   }
 
   .navbar-nav {
-    flex-direction: column !important;
-    gap: 0.3rem !important;
-    align-items: flex-end !important; /* Align items to right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: transparent !important;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem;
   }
 
   .nav-link {
-    padding: 0.3rem 0 !important;
-    color: #ffffff !important; /* White for mobile too */
+    color: #ffffff !important;
+    background: none !important;
+    padding: 0.5rem 1rem;
     text-align: right;
+    width: 100%;
   }
 
   .nav-link:hover {
     color: orange !important;
+  }
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: static;
+    background: none !important;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    margin-right: 20px;
   }
 }
