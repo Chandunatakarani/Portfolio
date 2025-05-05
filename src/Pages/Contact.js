@@ -33,7 +33,7 @@ const Contact = () => {
 
             <div className="mt-5 text-center">
               <p>Or email me directly at:</p>
-              <a href="mailto:chandunatakarani@gmail.com" className="text-info fw-bold">chandunatakarani@gmail.com</a>
+              <a href="mailto:chandunatakarani@gmail.com" className="text-info fw-bold nounder">chandunatakarani@gmail.com</a>
             </div>
           </div>
         </div>
