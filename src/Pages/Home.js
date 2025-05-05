@@ -1,13 +1,13 @@
 import React from 'react';
 import Footer from "../Footer";
 import { Typewriter } from "react-simple-typewriter";
+import'../Components/Navbar.css';
 
 const Home = () => {
   return (
     <div>
     <div className="bgimage"></div>
     <div className="typewriter" style={{ textAlign: 'center', fontSize: '30px' }}>
-      {/* <h1 style={{color:'white'}}></h1> */}
       <h1 style={{color:'white'}}>
         I'm a{' '}
         <span style={{ color: 'orange' }}>
