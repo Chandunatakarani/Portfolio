@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-dark text-white py-4">
       <div className="container text-center">
         <p>&copy; 2025 Chandu. All rights reserved.</p>
-        <div className="mt-3">
+        <div className="mt-3 ">
           <a 
             href="https://github.com/chandunatakarani" 
             className=" me-3 footer-link"

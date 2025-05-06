@@ -86,10 +86,6 @@
     text-align: right;
     width: 100%;
   }
-
-  .nav-link:hover {
-    color: orange !important;
-  }
 }
 
 /* DESKTOP VIEW */
@@ -109,4 +105,11 @@
   .nav-item {
     margin-right: 20px;
   }
+}
+.icon{
+  text-decoration: none;
+}
+.footer-link{
+  text-decoration: none;
+  color: orange;
 }
